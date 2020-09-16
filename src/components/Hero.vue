@@ -11,7 +11,9 @@
       A Front end designer and developer with vast knowledge of HTML,
       CSS,
       Bootstrap, JavaScript, Node, MongoDB,
-      <span class="bolden">VueJS</span> and other modern tools
+      <span
+        class="bolden"
+      >VueJS</span> and other modern tools
     </p>
   </div>
 </template>
@@ -27,26 +29,32 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.myLogo {
-  width: 40px;
-  margin-right: 30px;
+.container.box {
+  background-color: black !important;
 }
 
-.button_slide {
-  color: white !important;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0 #007bff;
-  transition: box-shadow ease-in-out 0.6s;
+.jumbotron .lead {
+  max-width: 60%;
+  margin: 0 auto;
+  text-shadow: 1px 3px 6px black;
+  font-size: 1.5rem;
 }
 
-.slide_right:hover {
-  box-shadow: inset 400px 0 0 0 #007bff;
-  color: #eee !important;
+.container .title {
+  padding-top: 4rem;
+  letter-spacing: 3px;
+  margin: auto;
+  font-family: "Baloo Bhai 2", cursive;
+  color: white;
 }
 
-.nav-item {
-  padding-right: 40px;
-  font-weight: 600;
+.photo-box .container .lead {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+span.bold {
+  font-weight: 400;
 }
 </style>
