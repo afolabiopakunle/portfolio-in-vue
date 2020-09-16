@@ -2,7 +2,7 @@
   <div class="container-fluid card-stack">
     <div class="container pb-1">
       <div class="row pt-2">
-        <div class="col-md-4" v-for="project in projects" v-bind:key="project">
+        <div class="col-md-4" v-for="project in projects" v-bind:key="project.id">
           <div class="card" id="step1">
             <a href="./errands.html" target="_blank">
               <div class="card-body">
@@ -54,9 +54,34 @@ export default {
           id: 1,
         },
         {
-          title: "JavaScript",
-          summary: "lorem ipsum",
+          title: "Playstore App Landing Page",
+          summary:
+            "Landing page design has evolved over a short period of time. This design is modern and ageless.",
           id: 2,
+        },
+        {
+          title: "Apartments Booking Website",
+          summary:
+            "This website is targeted at converting visitors to book an apartment with Martinas. ",
+          id: 3,
+        },
+        {
+          title: "Sports Website Project",
+          summary:
+            "Adrenalined filled sports webpage with trendy color selection and user-friendly backend cms functionalities.",
+          id: 4,
+        },
+        {
+          title: "JavaScript Shopping List",
+          summary:
+            "Search enabled shopping list app, constructed with the use of plain JavaScript with commented jQuery version included. ",
+          id: 5,
+        },
+        {
+          title: "My Designs",
+          summary:
+            "Page contains screenshots of previous designs and concepts I delivered using Figma and AdobeXD in some projects",
+          id: 6,
         },
       ],
     };
@@ -96,5 +121,6 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: black;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader msg="Welcome Afolabi VueJS" />
+    <AppHeader @startIntro="startIntro" />
     <Hero />
     <div class="container-fluid border shadow-sm"></div>
     <Card-Stack />
@@ -14,10 +14,16 @@ import Hero from "./components/Hero";
 import CardStack from "./components/Card-Stack";
 export default {
   name: "App",
+  props: [],
   components: {
     AppHeader,
     Hero,
     CardStack,
+  },
+  methods: {
+    startIntro: function () {
+      alert("Hi");
+    },
   },
 };
 </script>
