@@ -4,6 +4,7 @@
     <Hero />
     <div class="container-fluid border shadow-sm"></div>
     <Card-Stack />
+    <div class="container-fluid border shadow-sm"></div>
   </div>
 </template>
 
