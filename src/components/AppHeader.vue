@@ -51,4 +51,22 @@ export default {
   width: 40px;
   margin-right: 30px;
 }
+
+.button_slide {
+  color: white !important;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #007bff;
+  transition: box-shadow ease-in-out 0.6s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #007bff;
+  color: #eee !important;
+}
+
+.nav-item {
+  padding-right: 40px;
+  font-weight: 600;
+}
 </style>
