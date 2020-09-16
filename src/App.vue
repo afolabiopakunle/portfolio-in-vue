@@ -3,18 +3,20 @@
     <AppHeader msg="Welcome Afolabi VueJS" />
     <Hero />
     <div class="container-fluid border shadow-sm"></div>
+    <Card-Stack />
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import Hero from "./components/Hero";
-
+import CardStack from "./components/Card-Stack";
 export default {
   name: "App",
   components: {
     AppHeader,
     Hero,
+    CardStack,
   },
 };
 </script>

@@ -21,9 +21,7 @@
 <script>
 export default {
   name: "Hero",
-  props: {
-    msg: String,
-  },
+  props: {},
 };
 </script>
 
