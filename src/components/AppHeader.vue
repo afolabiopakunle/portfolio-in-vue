@@ -4,7 +4,7 @@
       <div class="container">
         <a class="navbar-brand text-dark" href="#">
           <img src="../assets/afolabi logo.png" alt="Logo" class="myLogo" />
-          <button class="btn btn-primary" @click="startIntro">Show Me Around</button>
+          <button class="btn btn-primary">Show Me Around</button>
         </a>
         <ul class="navbar-nav" id="step3">
           <li class="nav-item">
@@ -41,6 +41,55 @@ export default {
   name: "AppHeader",
   props: {
     msg: String,
+  },
+  methods: {
+    startIntro: function () {
+      var intro = introJs();
+      intro.setOptions({
+        steps: [
+          {
+            intro:
+              "<div style='text-align: center'><h4>Hi!</h4><p>Let me show around</p></div>",
+          },
+          {
+            element: document.querySelector("#step1"),
+            intro:
+              "<div style='text-align: center'>Each card links to a live project!</div>",
+            position: "top",
+            tooltipClass: "special",
+          },
+          {
+            element: document.querySelector("#step2"),
+            intro: "The name ;)",
+            position: "bottom",
+          },
+          {
+            element: "#step3",
+            intro: "Accounts",
+            position: "left",
+          },
+          {
+            element: "#step4",
+            intro: "Get in touch via email.",
+            position: "top",
+          },
+          {
+            element: "#step5",
+            intro: '<p style="text-align: center">Thanks!</p>',
+          },
+        ],
+        showBullets: false,
+        exitOnOverlayClick: false,
+        showProgress: true,
+        overlayOpacity: 1,
+      });
+      intro.start();
+    },
+    runOnStart: function () {
+      setTimeout(() => {
+        startIntro();
+      }, 5000);
+    },
   },
 };
 </script>
