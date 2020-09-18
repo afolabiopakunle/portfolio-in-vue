@@ -42,9 +42,9 @@
 
 <script>
 export default {
-  name: "Card-Stack",
+  name: "AppCards",
   props: {
-    projects: String,
+    projects: Array,
   },
   data: function () {
     return {};

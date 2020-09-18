@@ -3,7 +3,7 @@
     <div class="box" id="step2">
       <h1 class="display-3 mt-5 text-center title h2s">
         Afolabi
-        <span class="display-1">Opakunle</span>
+        <span class>Opakunle</span>
       </h1>
     </div>
 
@@ -21,7 +21,6 @@
 <script>
 export default {
   name: "Hero",
-  props: {},
 };
 </script>
 
@@ -54,5 +53,11 @@ export default {
 
 span.bold {
   font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
 </style>
