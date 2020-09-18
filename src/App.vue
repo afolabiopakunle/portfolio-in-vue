@@ -3,16 +3,16 @@
     <AppHeader @startIntro="startIntro" />
     <Hero />
     <div class="container-fluid border shadow-sm"></div>
-    <Card-Stack :projects="projects" />
+    <AppCards :projects="projects" />
     <div class="container-fluid border shadow-sm"></div>
     <AppFooter />
   </div>
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader.vue";
+import AppHeader from "./components/AppHeader";
 import Hero from "./components/Hero";
-import CardStack from "./components/Card-Stack";
+import AppCards from "./components/AppCards";
 import AppFooter from "./components/AppFooter";
 export default {
   name: "App",
@@ -20,10 +20,10 @@ export default {
   components: {
     AppHeader,
     Hero,
-    CardStack,
+    AppCards,
     AppFooter,
   },
-  data: function () {
+  data() {
     return {
       projects: [
         {
@@ -31,6 +31,7 @@ export default {
           summary:
             "Do you need quick services of regular daily people to help do stuffs for you?",
           id: 1,
+          url: "./errands.html",
         },
         {
           title: "Playstore App Landing Page",
@@ -66,7 +67,7 @@ export default {
     };
   },
   methods: {
-    startIntro: function () {
+    startIntro() {
       alert("Hi");
     },
   },

@@ -47,6 +47,7 @@
             <div class="col-md-4">
               <h6 class="text-danger">Students</h6>
               <p class="footnote">Peace Moyosore</p>
+              <p class="footnote">Emeka Ohaeri</p>
             </div>
             <div class="col-md-4">
               <h6 class="text-danger">Recommended Sites</h6>
@@ -67,7 +68,6 @@
 <script>
 export default {
   name: "AppFooter",
-  props: {},
 };
 </script>
 
@@ -97,6 +97,11 @@ export default {
   position: absolute;
   overflow: hidden;
   z-index: 5;
+}
+
+.footnote {
+  color: #666666;
+  margin-bottom: 2px;
 }
 
 .bd {

@@ -39,10 +39,6 @@
 <script>
 export default {
   name: "AppHeader",
-  props: {
-    msg: String,
-  },
-  methods: {},
 };
 </script>
 

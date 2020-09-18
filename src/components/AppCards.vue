@@ -2,9 +2,9 @@
   <div class="container-fluid card-stack">
     <div class="container pb-1">
       <div class="row pt-2">
-        <div class="col-md-4" v-for="project in projects" v-bind:key="project.id">
+        <div class="col-md-4" v-for="project in projects" :key="project.id">
           <div class="card" id="step1">
-            <a href="./errands.html" target="_blank">
+            <a :href="project.url" target="_blank">
               <div class="card-body">
                 <h4 class="card-title">{{ project.title }}</h4>
                 <p class="card-text">{{ project.summary }}</p>
