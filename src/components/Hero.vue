@@ -1,6 +1,6 @@
 <template>
   <div class="container box">
-    <div class="box" id="step2">
+    <div class="box" v-intro-step="2">
       <h1 class="mt-5 text-center title">
         Afolabi
         <span class="title2">Opakunle</span>

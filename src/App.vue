@@ -14,6 +14,7 @@ import AppHeader from "./components/AppHeader";
 import Hero from "./components/Hero";
 import AppCards from "./components/AppCards";
 import AppFooter from "./components/AppFooter";
+
 export default {
   name: "App",
   props: [],
@@ -72,6 +73,10 @@ export default {
     startIntro() {
       alert("Hi");
     },
+  },
+  mounted() {
+    this.$intro().start(); // start the guide
+    this.$intro().showHints(); // show hints
   },
 };
 </script>

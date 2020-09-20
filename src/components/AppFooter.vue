@@ -58,6 +58,7 @@
                 <p class="footnote">Pluralsight.com</p>
               </a>
             </div>
+            <div v-intro="'The content of tooltip'"></div>
           </div>
         </div>
       </div>

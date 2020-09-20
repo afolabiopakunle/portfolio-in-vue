@@ -3,6 +3,7 @@ import App from './App.vue';
 
 import VueIntro from 'vue-introjs';
 Vue.use(VueIntro);
+
 Vue.config.productionTip = false
 
 new Vue({

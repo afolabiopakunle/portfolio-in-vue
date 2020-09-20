@@ -6,7 +6,7 @@
           <img src="../assets/afolabi logo.png" alt="Logo" class="myLogo" />
           <button class="btn showBtn btn-primary">Show Me Around</button>
         </a>
-        <ul class="navbar-nav" id="step3">
+        <ul class="navbar-nav" v-intro-step="3">
           <li class="nav-item">
             <a
               class="nav-link rounded button_slide slide_right"
