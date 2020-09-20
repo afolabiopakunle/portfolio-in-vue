@@ -86,5 +86,6 @@ export default {
   user-select: none;
   -webkit-user-drag: none;
   position: relative;
+  min-width: 320px;
 }
 </style>
