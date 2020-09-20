@@ -44,12 +44,14 @@ export default {
           summary:
             "This website is targeted at converting visitors to book an apartment with Martinas. ",
           id: 3,
+          url: "https://perfecthavensapartments.com",
         },
         {
           title: "Sports Website Project",
           summary:
             "Adrenalined filled sports webpage with trendy color selection and user-friendly backend cms functionalities.",
           id: 4,
+          url: "https://sportsglobaltv.com",
         },
         {
           title: "JavaScript Shopping List",
@@ -83,5 +85,6 @@ export default {
   background: black;
   user-select: none;
   -webkit-user-drag: none;
+  position: relative;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div class="container box">
     <div class="box" id="step2">
-      <h1 class="display-3 mt-5 text-center title h2s">
+      <h1 class="mt-5 text-center title">
         Afolabi
-        <span class>Opakunle</span>
+        <span class="title2">Opakunle</span>
       </h1>
     </div>
 
@@ -31,7 +31,7 @@ export default {
 }
 
 .jumbotron .lead {
-  max-width: 60%;
+  /* max-width: 60%; */
   margin: 0 auto;
   text-shadow: 1px 3px 6px black;
   font-size: 1.5rem;
@@ -40,9 +40,14 @@ export default {
 .container .title {
   padding-top: 4rem;
   letter-spacing: 3px;
+  font-size: 4.5rem;
   margin: auto;
   font-family: "Baloo Bhai 2", cursive;
   color: white;
+}
+
+.container .title2 {
+  font-size: 6rem;
 }
 
 .photo-box .container .lead {
@@ -56,8 +61,12 @@ span.bold {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  .container .title {
+    font-size: 3rem;
+  }
+
+  .container .title2 {
+    font-size: 4rem;
   }
 }
 </style>

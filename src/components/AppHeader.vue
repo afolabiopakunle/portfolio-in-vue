@@ -4,7 +4,7 @@
       <div class="container">
         <a class="navbar-brand text-dark" href="#">
           <img src="../assets/afolabi logo.png" alt="Logo" class="myLogo" />
-          <button class="btn btn-primary">Show Me Around</button>
+          <button class="btn showBtn btn-primary">Show Me Around</button>
         </a>
         <ul class="navbar-nav" id="step3">
           <li class="nav-item">
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
 .myLogo {
   width: 40px;
   margin-right: 30px;
@@ -65,5 +65,20 @@ export default {
 .nav-item {
   padding-right: 40px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .showBtn {
+    position: absolute;
+    top: 120%;
+    left: 20px;
+    opacity: 0.5;
+  }
+  .myLogo {
+    margin-right: 10px;
+  }
+  .nav-item {
+    padding-right: 20px;
+  }
 }
 </style>

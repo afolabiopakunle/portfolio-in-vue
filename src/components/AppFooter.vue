@@ -47,7 +47,7 @@
             <div class="col-md-4">
               <h6 class="text-danger">Students</h6>
               <p class="footnote">Peace Moyosore</p>
-              <p class="footnote">Emeka Ohaeri</p>
+              <p @click="sayHi" class="footnote">Emeka Ohaeri</p>
             </div>
             <div class="col-md-4">
               <h6 class="text-danger">Recommended Sites</h6>
@@ -68,6 +68,11 @@
 <script>
 export default {
   name: "AppFooter",
+  methods: {
+    sayHi() {
+      alert("Framework Class");
+    },
+  },
 };
 </script>
 
