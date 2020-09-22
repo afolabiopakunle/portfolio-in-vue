@@ -2,7 +2,7 @@
   <div class="container-fluid bg-white p-0">
     <div class="container">
       <a
-        href="https://martinasapartments.com/hardstorage/2020/08/Afolabi-O.-Opakunle-Front-End.pdf"
+        href="https://martinasapartments.com/hardstorage/2020/09/Afolabi-O.-Opakunle-_-Front-End-Dev.pdf"
         target="_blank"
       >
         <h1 class="text-success text-center p-5">Click To Download Resume</h1>
